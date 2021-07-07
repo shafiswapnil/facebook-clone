@@ -7,7 +7,6 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
     </Provider>
   )
-
 }
 
 export default MyApp;
