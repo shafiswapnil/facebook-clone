@@ -2,12 +2,14 @@ import Stories from './Stories';
 
 function Feed() {
   return (
-    <div>
-      {/* Storied */}
-      <Stories />
+    <div className="flex-grow h-screen pb-44 pt-8 mr-4 xl:mr-40 overflow-y-auto">
+      <div className="mx-auto max-w-md md:max-w-lg lg:max-w-2xl">
+        {/* Storied */}
+        <Stories />
 
-      {/* Input Box */}
-      {/* Posts */}
+        {/* Input Box */}
+        {/* Posts */}
+      </div>
     </div>
   )
 }

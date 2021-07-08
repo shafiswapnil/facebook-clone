@@ -60,7 +60,7 @@ function Header() {
           layout="fixed"
         />
 
-        <p className="whitespace-nowrap font-semibold pr-3 cursor-pointer">{session.user.name}</p>
+        <p className="hidden lg:inline-flex text-sm whitespace-nowrap font-semibold pr-3 cursor-pointer">{session.user.name}</p>
 
         <ViewGridIcon className="icon" />
         <ChatIcon className="icon" />
