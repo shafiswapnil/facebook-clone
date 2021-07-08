@@ -8,7 +8,7 @@ export default function Home({ session }) {
   if (!session) return <Login />;
 
   return (
-    <div>
+    <div className="h-screen bg-gray-100 overflow-hidden">
       <Head>
         <title>Facebook</title>
         <meta name="description" content="Facebook Clone" />
@@ -17,7 +17,7 @@ export default function Home({ session }) {
 
       <Header />
 
-      <main>
+      <main className="flex">
         {/* Sidebar */}
         <Sidebar />
 
