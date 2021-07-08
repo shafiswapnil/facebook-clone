@@ -51,7 +51,6 @@ function Header() {
 
       {/* Right */}
       <div className="flex items-center sm:space-x-2 justify-end">
-        {/* Profile Pic */}
         <Image
           onClick={signOut}
           className="rounded-full cursor-pointer"
@@ -61,7 +60,7 @@ function Header() {
           layout="fixed"
         />
 
-        <p className="whitespace-nowrap font-semibold pr-3">Shafi Swapnil</p>
+        <p className="whitespace-nowrap font-semibold pr-3 cursor-pointer">{session.user.name}</p>
 
         <ViewGridIcon className="icon" />
         <ChatIcon className="icon" />
