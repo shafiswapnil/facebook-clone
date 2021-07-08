@@ -7,8 +7,8 @@ function SidebarRow({ src, Icon, title }) {
         <Image
           className="rounded-full"
           src={src}
-          width='30'
-          height='30'
+          width={30}
+          height={30}
           layout='fixed'
         />
       )}
