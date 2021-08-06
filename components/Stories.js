@@ -2,7 +2,7 @@ import StoryCard from "./StoryCard";
 
 const stories = [
   {
-    name: "Shafi Swapnil",
+    name: "Hey",
     src: "https://links.papareact.com/zof",
     profile: "https://links.papareact.com/l4v"
   },
