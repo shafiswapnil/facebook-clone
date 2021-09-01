@@ -1,8 +1,9 @@
 import { useSession } from "next-auth/client";
 import Image from 'next/image';
-import firebase from 'firebase/app';
-import { Timestamp } from "firebase/firestore";
+// import firebase from 'firebase/app';
+import firebase from 'firebase/compat/app';
 import { db } from '../firebase';
+// import { Timestamp } from 'firebase/compat/firestore';
 import { EmojiHappyIcon } from "@heroicons/react/outline";
 import { CameraIcon, VideoCameraIcon } from "@heroicons/react/solid";
 import { useRef } from "react";
@@ -21,8 +22,7 @@ function InputBox() {
       name: session.user.name,
       email: session.user.email,
       image: session.user.image,
-      // timestamp: firebase.firestore.FieldValue.serverTimestamp()
-      timestamp: Timestamp.fromDate(new Date("December 10, 1815"))
+      timestamp: firebase.firestore.FieldValue.serverTimestamp()
     });
 
     inputRef.current.value = '';
